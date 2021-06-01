@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>  
+    <title>MAC Information Lookup</title>
+
+<script type="text/javascript">
+    !function(){function e(){if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)){var e=window.screen.width,t=+document.getElementById("viewport").getAttribute("data-mw-size"),i=e/t,n=document.getElementById("viewport");e<t?n.setAttribute("content","initial-scale="+i+", maximum-scale="+i+", minimum-scale="+i+", user-scalable=no, width="+t):n.setAttribute("content","initial-scale=1.0, maximum-scale=1, minimum-scale=1.0, user-scalable=yes, width="+e)}}window.addEventListener("resize",function(){e()}),e()}();
+</script>    <meta name="csrf-token" content="E7poRD12s8cXGFHy0MZKiyyLgsHRkRfWdyf7wMiK">
+    <link rel="shortcut icon" type="image/x-icon" href="https://macaddress.io/images/favicon_package/fav-6x.png">
+
+        <link rel="apple-touch-icon" sizes="144x144" href="https://macaddress.io/images/favicon_package/apple-touch-icon.png">
+        <link rel="manifest" crossorigin="use-credentials" href="https://macaddress.io/site.webmanifest">
+        <link rel="mask-icon" href="https://macaddress.io/images/favicon_package/safari-pinned-tab.svg" color="#2c9850">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        
+
+        <meta name="description" content="By a given MAC address, retrieve OUI vendor information, detect virtual machines, possible applications, read the information encoded in the MAC, and get our research&#039;s results regarding the MAC address or the OUI."/>
+
+    <meta property="og:title" content="MAC Address Vendor Lookup" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://macaddress.io" />
+    <meta property="og:description" content="By a given MAC address, retrieve OUI vendor information, detect virtual machines, possible applications, read the information encoded in the MAC, and get our research&#039;s results regarding the MAC address or the OUI." />
+    <meta property="og:image" content="https://macaddress.io/images/vertical-logo-black.png?v=2" />
+    <meta property="og:locale" content="en_GB" />
+
+    <meta itemprop="name" content="MAC Address Vendor Lookup" />
+    <meta itemprop="description" content="By a given MAC address, retrieve OUI vendor information, detect virtual machines, possible applications, read the information encoded in the MAC, and get our research&#039;s results regarding the MAC address or the OUI." />
+    <meta itemprop="image" content="https://macaddress.io/images/vertical-logo-black.png?v=2" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MAC Address Vendor Lookup">
+    <meta name="twitter:description" content="By a given MAC address, retrieve OUI vendor information, detect virtual machines, possible applications, read the information encoded in the MAC, and get our research&#039;s results regarding the MAC address or the OUI.">
+    <meta name="twitter:image" content="https://macaddress.io/images/vertical-logo-black.png?v=2">
+
+    <script>
+        IF_LOGGED = '0';
+    </script>
+    <link media="all" type="text/css" rel="stylesheet" href="https://macaddress.io/css/app.css">
+        </head>
+<body>
+<div id="app">
+            <header class="  ">
+    <div class="content-in-blocks flex-row">
+        <div class="svg-wrapper">
+    <a href="https://macaddress.io" title="Mac Address Lookup">
+        <img src="https://macaddress.io/images/logo-white-v2.png" alt="MacAddress.io">
+    </a>
+</div>
+        <nav class="desktop-menu flex-row">
+            <a href="https://macaddress.io" title="MAC Address Vendor Lookup" id="-anchor" data-additional-anchor="mac-address-lookup">Lookup</a>
+            <a href="https://macaddress.io/api" title="About MAC address API | API | MAC Address Vendor Lookup" id="api-anchor">API</a>
+            <a href="https://macaddress.io/database-download" title="About MAC vendors database | Database download | MAC Address Vendor Lookup" id="database-download-anchor">Database download</a>
+            <a href="https://macaddress.io/mac-address-generator" title="MAC address generator | MAC Address Vendor Lookup" id="mac-address-generator-anchor">Generator</a>
+            <a href="https://macaddress.io/statistics" title="Global statistics over the MAC address blocks distribution | MAC Address Vendor Lookup" id="statistics-anchor">Statistics</a>
+            <a href="https://macaddress.io/faq" title="Frequently asked questions | FAQ |MAC Address Vendor Lookup"  id="faq-anchor">FAQ</a>
+        </nav>
+        <div class="auth-block flex-row">
+                            <a href="https://macaddress.io/login">Login</a>
+                <a href="https://macaddress.io/signup" class="btn common-btn border-white-btn">Sign up</a>
+                    </div>
+        <div class="hamburger-block" hidden>
+            <span class="hamburger-label">Menu</span>
+            <div class="hamburger hamburger--spin" tabindex="0"
+                 aria-label="Menu" role="button" aria-controls="navigation">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+            <nav id="navigation">
+                <!--navigation goes here-->
+            </nav>
+        </div>
+
+        <nav class="slideout-menu panel" id="menu" role="navigation">
+    <ul>
+        <li><a href="https://macaddress.io" title="MAC Address Vendor Lookup" id="-mobile-anchor" data-additional-anchor="mac-address-lookup">Lookup</a></li>
+        <li><a href="javascript:void(0);" class="link-with-submenu with-icon" id="api-mobile-anchor">API<i class="icon icon-angle-down"></i></a>
+            <ul>
+                <li><a href="https://macaddress.io/api" title="About MAC address API | API | MAC Address Vendor Lookup" id="-submenu-mobile-nav">About</a></li>
+                <li><a href="https://macaddress.io/api/documentation" title="Documentation | API | MAC Address Vendor Lookup" id="documentation-submenu-mobile-nav">API docs</a></li>
+                <li><a href="https://macaddress.io/api/libraries" title="Libraries | API | MAC Address Vendor Lookup" id="libraries-submenu-mobile-nav">Libraries</a></li>
+                <li><a href="https://macaddress.io/api/integrations" title="Integrations | API | MAC Address Vendor Lookup" id="integrations-submenu-mobile-nav">Integrations</a></li>
+                <li><a href="https://macaddress.io/api/utilities" title="Utilities | API | MAC Address Vendor Lookup" id="utilities-submenu-mobile-nav">Utilities</a></li>
+                <li><a href="https://macaddress.io/api/pricing" title="Pricing | API | MAC Address Vendor Lookup" id="pricing-submenu-mobile-nav">Pricing</a></li>
+            </ul>
+        </li>
+        <li><a href="javascript:void(0);" class="link-with-submenu with-icon" id="database-download-mobile-anchor">Database download<i class="icon icon-angle-down"></i></a>
+            <ul>
+                <li><a href="https://macaddress.io/database-download" title="About MAC vendors database | Database download | MAC Address Vendor Lookup" id="-submenu-mobile-nav">About</a></li>
+                <li><a href="https://macaddress.io/database-download/json" title="JSON database | Database download | MAC Address Vendor Lookup" id="json-submenu-mobile-nav">JSON</a></li>
+                <li><a href="https://macaddress.io/database-download/xml" title="XML database | Database download | MAC Address Vendor Lookup" id="xml-submenu-mobile-nav">XML</a></li>
+                <li><a href="https://macaddress.io/database-download/csv" title="CSV database | Database download | MAC Address Vendor Lookup" id="csv-submenu-mobile-nav">CSV</a></li>
+                <li><a href="https://macaddress.io/database-download/cisco-vendor" title="Cisco vendor database | Database download | MAC Address Vendor Lookup" id="cisco-vendor-submenu-mobile-nav">Cisco vendorMacs.xml</a></li>
+            </ul>
+        </li>
+        <li><a href="https://macaddress.io/mac-address-generator" class="link-with-submenu with-icon" title="MAC address generator | MAC Address Vendor Lookup" id="mac-address-generator-mobile-anchor">Generator</a></li>
+        <li><a href="javascript:void(0);" class="link-with-submenu with-icon" id="statistics-mobile-anchor">Statistics<i class="icon icon-angle-down"></i></a>
+            <ul>
+                <li><a href="https://macaddress.io/statistics" title="OUI registrations statistics | Statistics | MAC Address Vendor Lookup" id="-submenu-mobile-nav">About</a></li>
+                <li><a href="https://macaddress.io/statistics/country" title="OUI registrations by country | Statistics  | MAC Address Vendor Lookup" id="country-submenu-mobile-nav">By the country</a></li>
+                <li><a href="https://macaddress.io/statistics/company" title="OUI registrations by company | Statistics  | MAC Address Vendor Lookup" id="company-submenu-mobile-nav">By the company</a></li>
+                <li><a href="https://macaddress.io/statistics/date" title="OUI registrations by date | Statistics  | MAC Address Vendor Lookup" id="date-submenu-mobile-nav">By the date</a></li>
+                <li><a href="https://macaddress.io/statistics/block-size" title="OUI registrations by block size | Statistics | MAC Address Vendor Lookup" id="block-size-submenu-mobile-nav">By the block size</a></li>
+            </ul>
+        </li>
+        <li><a href="https://macaddress.io/faq" title="Frequently asked questions | FAQ |MAC Address Vendor Lookup" id="faq-mobile-anchor">FAQ</a></li>
+        <li class="hr-li"></li>
+        <li class="btn-block-li">
+                            <a href="https://macaddress.io/login">Login</a>
+                <a href="https://macaddress.io/signup" class="btn common-btn">Sign up</a>
+                    </li>
+    </ul>
+</nav>
+    </div>
+
+    </header>
+    
+        
+        
+<section class="first-slide mac-address-lookup-block "
+         style="background-image: url(https://macaddress.io/svg/lookup-bg.svg?v=1622370217)"
+>
+    <div class="content-in-blocks">
+        <div class="info-wrapper">
+            <h1>MAC address vendor lookup</h1>
+            <div class="form-wrapper">
+                <form action="https://macaddress.io/mac-address-lookup" method="POST" autocomplete="off">
+    <input type="hidden" name="_token" value="E7poRD12s8cXGFHy0MZKiyyLgsHRkRfWdyf7wMiK">    <input type="text"
+           placeholder="MAC address or OUI"
+           name="mac-address-value"
+           pattern="^([0-9A-Fa-f]{2}[.:-]?){2,7}([0-9A-Fa-f]{2})$"
+           data-autofocus="true"
+           required
+    >
+    <input type="submit" value="Search" class="btn green-btn">
+</form>
+                <p>Example 44:38:39:ff:ef:57</p>
+            </div>
+            <p class="description">By a given MAC address, retrieve OUI vendor information, detect virtual machines, possible applications,
+                read the information encoded <span class="span-no-wrap">in the MAC</span>, and get our research's results regarding the MAC address or the
+                OUI.</p>
+        </div>
+    </div>
+</section>
+
+
+            <section class="common-block contact-us-block">
+    <div class="content-in-blocks">
+        <div class="grid-item">
+            <h4>Have questions?</h4>
+            <p>We work hard to improve our services for you. <span class="span-no-wrap">As part of that process</span> we welcome your feedback, questions
+                <span class="span-no-wrap">and suggestions</span>. Please let us know your thoughts and feelings, <span class="span-no-wrap">and any way</span> in which you think we can
+                improve our product.</p>
+            <p>Shoot us an email to <a href="mailto:support@macaddress.io" title="support@macaddress.io">support@macaddress.io</a>
+                <span class="span-no-wrap">or just fill in the contact form</span>.</p>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item">
+            <form id="contact-us-form">
+                <input type="text" class="user-name" placeholder="Name" required tabindex="1"
+                                       >
+                <input type="email" class="user-email" placeholder="Email" required tabindex="2"
+                                       >
+                <textarea class="user-message" placeholder="Message" tabindex="3" rows="10" minlength="20"
+                          required></textarea>
+                <button class="btn common-btn green-btn send-btn">Leave request</button>
+            </form>
+        </div>
+    </div>
+</section>        <footer>
+    <div class="content-in-blocks">
+        <div class="left-links">
+            <p>Made with<i class="icon-heart"></i>by <a href="https://codeline.fi/" class="common-link" target="_blank" title="CodeLine Oy">CodeLine Oy</a><i class="icon-copyright"></i>2018 &mdash; 2021</p>
+            <p>Our new project: <a href="https://itjobs.ai/Finland" title="2768 IT jobs in Finland | itjobs.ai — Search engine for IT jobs" target="_blank">IT Jobs in Finland</a></p>
+        </div>
+        <span>
+            <a href="https://macaddress.io/terms-of-service" class="common-link" title="Terms of Service">Terms of Service</a>
+            <span> and </span>
+            <a href="https://macaddress.io/privacy-policy" class="common-link" title="Privacy Policy">Privacy Policy</a>
+        </span>
+    </div>
+</footer>
+        <div class="snackbar" id="snackbar">The data was just refreshed</div>    
+    <cookie-message-component />
+</div>
+
+<script src="https://macaddress.io/js/bootstrap.js?id=96054c5fe16f93d31bad"></script>
+
+
+
+<script src="https://macaddress.io/js/app.js?id=738b58277249c56e865d"></script>
+
+</body>
+</html>
